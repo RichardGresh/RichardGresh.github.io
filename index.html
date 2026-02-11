@@ -3,74 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href = "styles.css">
-    
-    
+    <title>Richard Gresham | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "NavBar">
-        
-        <div class = "leftBarStuff">
-            <div class = "MyPortfolio"><p>My Portfolio</p></div>
-        </div>
-        
 
-        
-        <div class = "rightBarStuff">
-            <div class = "about navigation"><a >about</a></div>
-            <div class = "skills navigation"><a>skills</a></div>
-            <div class = "projects navigation"><a>projects</a></div>
-            <div class = "Contactme navigation"><a>contact</a></div>
-        </div>
-        
-    </div>
-    <div class = "headerStart">
-        <div class ="header">
-            <h1 class = "name">Hi, I'm Richard Gresham</h1>
-            <h3 class = "title">Aspiring Software Developer</h3>
-            <div class = "aboutMe">
-                <!--<p>Computer Science graduate passionate about building efficient, user-focused software solutions.I'm skilled in C, C++, Python and more with hands on experience creating applications from conception to deployment.</p> -->
-                <p>Computer Science graduate passionate about building efficient, user-focused software solutions. I'm skilled in C, C++, Python and more with hands on experience creating applications from conception to deployment.</p>
-            </div>
-    
-        </div>
-        <div class = "headerpicture">
-            <a href ="./index.html"><img src ="./images/Greek-Chicken-Pitas-19-960x1440.jpg" alt = "chicken pic" height = "500" width = "500"></a>
-            
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
 
-        </div>
-    </div>
-    <div class = "Skills">
-            
-            <div class = "skill_list">
-                <h1 class = "skill_title">Languages</h1>
-                <ul class = "SL">
-                    <li>C++</li>
-                    <li>C</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>Kotlin</li>
-                </ul>
-            </div>
-          
-            <div class = "tool_list">
-                <h1 class = "tool_title">Tools</h1>
-                <ul class = "TL">
-                    <li>Visual Studio</li>
-                    <li>Git</li>
-                    <li>Jira</li>
-                    <li>Android Studios</li>
-
-                </ul>
-            </div>
-        </div>
+<!-- HERO -->
+<section class="hero" id="about">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Richard Gresham</span></h1>
+        <h3>Aspiring Software Developer</h3>
+        <p>
+            Computer Science graduate passionate about building efficient,
+            user-focused software solutions. Skilled in C, C++, Python, and
+            modern development tools with hands-on project experience.
+        </p>
+        <a class="btn" href="#projects">View My Work</a>
     </div>
 
+    <div class="hero-image">
+        <img src="./images/profile-placeholder.png" alt="Profile image">
+    </div>
+</section>
 
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Languages</h3>
+            <ul>
+                <li>C++</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Kotlin</li>
+            </ul>
+        </div>
 
-    
+        <div class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git/GitHub</li>
+                <li>Visual Studio</li>
+                <li>Jira</li>
+                <li>Android Studio</li>
+                <li>Linux</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Huffman File Encoder</h3>
+        <p>
+            Implemented a Huffman encoding system in C++ using
+            priority queues, custom trees, bit manipulation and Qt for I/O and GUI.
+        </p>
+        <a href="#" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Chat Application</h3>
+        <p>
+            Designed and implemented a multithreaded peer-to-peer chat application supporting real-time messaging over LAN using socket programming.
+            GUI components for message logs and user input using MFC and C++.
+        </p>
+        <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+        <h3>Horror Frame Project</h3>
+        <p>
+            Created a horror frame that utilizes a screen hooked up to a raspberry pi inside of a 
+            Frame. Has a infrared sensor built into the frame that detects body heat of nearby people,
+            triggering one of many random scenes to play out. Built with Python.
+        </p>
+        <a href="#" target = "_blank"> View on Github</a>
+
+    </div>
+    <div class="project-card">
+        <h3>Alpha-Beat Pruning Chess Engine</h3>
+        <p>
+            Created a chess game using Python and Pygame for full software devleopment lifecycle.
+            Developed a custom heuristic function, valued off of piece value, position and center control.
+            AI uses alpha-beta pruning algorithm to think and make a decision.
+        </p>
+        <a href="#" target ="_blank"> View on GitHub</a>
+    </div>
+</section>
+
+<!-- RESUME / ACHIEVEMENTS -->
+<section class="resume" id="resume">
+    <h2>Resume & Achievements</h2>
+    <ul class="achievements">
+        <li>🎓 Bachelor’s Degree in Computer Science</li>
+        <li>🛠️ ACM Orange Award for Excellence CSUF</li>
+        <li>📦 Summa Cum Laude with 3.96/4.0 GPA</li>
+    </ul>
+
+    <a class="btn" href="files/Richard_Gresham_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Richard Gresham</p>
+</footer>
+
 </body>
 </html>
